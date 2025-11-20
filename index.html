@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="vh-100 text-center d-flex align-items-center">
+      <div class="container">
+        <div class="row h-100 d-flex justify-content-center align-items-center">
+          <div class="col-md-4">
+            <!-- <div class="logo w-50 mx-auto text-center mb-4">
+                        <h1 class="text-white p-4"></h1>
+                    </div> -->
+            <div class="card me-5 mx-auto text-center" id="card">
+              <div class="content">
+                <span class="fw-bolder fs-4">Quizz App</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8" id="result">
+            <!-- quiz form -->
+            <div class="content" id="quizForm">
+              <div class="form my-3">
+                <select id="CategorySelect" class="form-select py-3">
+                  <option value="" selected>Any category</option>
+                  <option value="9">General Knowledge</option>
+                  <option value="27">Animals</option>
+                  <option value="19">Science: Mathematics</option>
+                  <option value="18">Science: Computers</option>
+                  <option value="22">Geography</option>
+                </select>
+              </div>
+              <div class="form mb-3">
+                <select id="levelSelect" class="form-select py-3">
+                  <option value="easy" selected>Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="questionNumber"
+                  placeholder="name@example.com"
+                />
+                <label for="questionNumber">Number of Questions</label>
+              </div>
+              <div class="form">
+                <button class="btn btn-dark py-2 w-100 fw-bolder" id="startBtn">
+                  Let's Start
+                </button>
+              </div>
+            </div>
+
+            <!-- questions -->
+            <!-- <div class="quiz-container">
+                        <div class="quiz-header d-flex justify-content-between align-items-center text-center mb-4">
+
+                            <div class="quiz-title">General Knowledge</div>
+                            <div class="question-num py-3">1 of 3</div>
+                        </div>
+                        
+                        <div class="question">Which Of The Following Chemicals Are Found In Eggplant Seeds?</div>
+                        
+                        <div class="options-grid">
+                            <div class="option">Cyanide</div>
+                            <div class="option">Mescaline</div>
+                            <div class="option">Nicotine</div>
+                            <div class="option">Psilocybin</div>
+                        </div>
+                        
+                        <div class="score-container">
+                            <div class="score-label">SCORE </div>
+                            <div class="score-value"> -O-</div>
+                        </div>
+                    </div> -->
+
+            <!-- final score -->
+            <!-- <div class="quiz-container">
+                        <p class="fs-5 my-2">Nice try!</p>
+                        <h2 class="mb-4">Your final score is 1 of 3</h2>
+                        <button class="btn btn-dark py-2 w-25 fw-bolder mb-4">Try Again</button>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javaScript/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./javaScript/index.js"></script>
+  </body>
+</html>
